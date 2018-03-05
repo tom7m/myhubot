@@ -25,7 +25,7 @@ module.exports = function(robot) {
 			songsSung = 0;
 		}
 		if(songsSung < 5){
-			msg.reply("Did somebody want me to sing? How about this: " + getRandSong() + " I'm just warming up!");
+			msg.reply("Did somebody want me to sing? How about this: " + getRandSong() + ". I'm just warming up!");
 			return robot.brain.set('totalSongs', songsSung + 1);
 		} else if (songsSung % 2  === 0 && songsSung % 3  === 0) {
 			msg.reply("Did somebody want me to sing? How about this: " + getRandSong());
